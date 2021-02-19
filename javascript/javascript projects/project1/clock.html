@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple clock</title>
+    <style>
+        * {
+            background-color: black;
+        }
+
+        #clock {
+            border: 2px solid black;
+            display: inline-block;
+            padding: 17px;
+            position: relative;
+            left: 500px;
+            top:250px;
+            color: white;
+            box-shadow: 2px seashell;
+            font-size: 4rem;
+        }
+    </style>
+</head>
+
+<body onload="updateClock(); setInterval('updateClock()', 1000)">
+    <div class="container">
+        <div id="clock">
+
+        </div>
+    </div>
+</body>
+<script>
+
+    function updateClock() {
+
+        const time = new Date();
+        let currentHours = time.getHours();
+        let currentMinutes = time.getMinutes();
+        let currentSeconds = time.getSeconds();
+
+        currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+
+        currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+
+        currentHours = (currentHours > 12 ? currentHours - 12 : currentHours);
+
+        currentHours = (currentHours == 0 ? 12 : currentHours);
+
+        const currentTime = currentHours + ":" + currentMinutes + ":" + currentSeconds;
+
+        let timeOfDay = (currentTime < 12) ? " AM" : " PM";
+
+
+        let clock = document.getElementById('clock');
+        clock.innerHTML = currentTime + timeOfDay;
+
+
+    }
+</script>
+
+</html>

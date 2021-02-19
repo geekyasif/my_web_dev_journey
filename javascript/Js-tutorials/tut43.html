@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps in Javascript</title>
+</head>
+
+<body>
+    <h1>Maps in Javascript</h1>
+</body>
+<script>
+
+    let map = new Map();
+
+    const key = 'string', key2 = {}, key3 = function () { };
+
+    // setting the value of map by using map.set
+    map.set(key, 'this is a string')
+    map.set(key2, 'this is a empty curly braket')
+    map.set(key3, 'this is a empty function')
+    console.log(map);
+
+  
+    //  getting the value of map
+    let getValue = map.get(key)
+    // console.log(getValue)
+
+    let getValue2 = map.get(key2)
+    // console.log(getValue2)
+
+    let getValue3 = map.get(key3)
+    // console.log(getValue3)
+
+
+
+    // to ckeck the size of the map
+    // console.log(map.size)
+
+
+    //iterate the by using for..of loop 
+    for (let [key, value] of map) {
+        // console.log(value)
+    }
+
+    //iterate the by using for..of loop to get key
+    for (let key of map.keys()) {
+        // console.log(key)
+    }
+
+    //iterate the by using for..of loop to get value
+    for (let value of map.values()) {
+        // console.log(value);
+    }
+
+    // iterate using for each loop
+    map.forEach((value, key) => {
+        //    console.log(value)                           
+        //    console.log(key)                           
+    });
+
+    // converting map into array
+    let array = Array.from(map);
+    // console.log(array);
+
+    // only converting map keys into array 
+    let arrayKey = Array.from(map.keys());
+    // console.log(arrayKey);
+
+    // only converting map values into array 
+    let arrayValue = Array.from(map.values());
+    // console.log(arrayValue);
+
+
+
+</script>
+
+</html>

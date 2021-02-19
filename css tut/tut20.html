@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text shadow and box shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            /* border: 2px solid tomato; */
+            padding: 23px 34px;
+            margin: 23px 12px;
+            background-color: azure;
+
+            /* if you want box shadow outside  */
+
+            /* syntax box-shadow: (ofset-x ofset-y color) you can change the shadow posiiton by negative value like -12 and -13 */
+            /* box-shadow: 12px 13px black; */
+
+            /* and if you want to give the shadow blur effect then here is the syntax */
+            /* syntax box-shadow: (ofset-x ofset-y shadow blur color) */
+            /* box-shadow: 5px 9px 10px red; */
+
+              /* and also shadow spread */
+              /* syntax box-shadow: (ofset-x ofset-y shadow blur-radius shadow spread-radius color) */
+              /* box-shadow: 5px 9px 10px 5px red; */
+               
+              /* if you want box shadow inside then use inset  */
+              /* box-shadow: inset 23px 34px red; */
+          
+              /* if you want multiple shadow color then use this */
+         
+              box-shadow: 8px 9px red, 20px 23px black;
+
+        }
+
+        /* now we use text shadow property */
+        .card h2{
+            /* text-shadow: 2px 2px brown; */
+
+            /* for shadow blur */
+            text-shadow: 2px 2px 6px brown;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>hack like anonymous</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia labore laborum quod recusandae. Fugit
+                eligendi unde, harum amet dolores possimus earum obcaecati beatae maxime, est commodi nemo aliquam.
+                Magnam et quo labore repudiandae.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>programming course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia labore laborum quod recusandae. Fugit
+                eligendi unde, harum amet dolores possimus earum obcaecati beatae maxime, est commodi nemo aliquam.
+                Magnam et quo labore repudiandae.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>web development course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia labore laborum quod recusandae. Fugit
+                eligendi unde, harum amet dolores possimus earum obcaecati beatae maxime, est commodi nemo aliquam.
+                Magnam et quo labore repudiandae.</p>
+        </div>
+    </div>
+</body>
+
+</html>

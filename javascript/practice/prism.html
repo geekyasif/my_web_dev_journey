@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="themes/prism.css">
+    <title>Prism Javascript</title>
+<style>
+    #code{
+        width: 500px;
+        height: 500px;
+       
+        overflow: scroll;
+        background-color: rgb(250, 244, 232);
+    }
+
+    .row{
+       display: flex;
+       flex-flow: row;
+    }
+</style>
+</head>
+
+<body>
+          
+<div class="row">
+
+    <pre id="code" >
+        <code>
+
+            
+        </code>
+    </pre> 
+
+      <p>Javascript code</p>
+    <pre id="code" >
+       <code >
+
+        let source = 'bbc-news';
+        let apiKey = 'f44fe3073fa348b488d0c8ba983d8ef9'
+        
+        // Grab the news container
+        let newsAccordion = document.getElementById('newsAccordion');
+        
+        // Create an ajax get request
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', `https://newsapi.org/v2/top-headlines?sources=${source}&apiKey=${apiKey}`, true);
+        
+        // What to do when response is ready
+        xhr.onload = function () {
+            if (this.status === 200) {
+                let json = JSON.parse(this.responseText);
+                let articles = json.articles;
+                console.log(articles);
+                let newsHtml = "";
+                articles.forEach(function(element, index) {
+                    // console.log(element, index)
+                  
+                });
+                newsAccordion.innerHTML = newsHtml;
+            }
+            else {
+                console.log("Some error occured")
+            }
+        }
+        
+        xhr.send()
+        
+        
+        
+
+           
+       </code>
+   </pre>
+  
+    <h1>css code
+    </h1>
+   <pre id="code" >
+    <code >
+
+        code[class*="language-"],
+        pre[class*="language-"] {
+            color: #f8f8f2;
+            background: none;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 1em;
+            text-align: left;
+            white-space: pre;
+            word-spacing: normal;
+            word-break: normal;
+            word-wrap: normal;
+            line-height: 1.5;
+        
+            -moz-tab-size: 4;
+            -o-tab-size: 4;
+            tab-size: 4;
+        
+            -webkit-hyphens: none;
+            -moz-hyphens: none;
+            -ms-hyphens: none;
+            hyphens: none;
+        }
+        
+        /* Code blocks */
+        pre[class*="language-"] {
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+            border-radius: 0.3em;
+        }
+        
+        :not(pre) > code[class*="language-"],
+        pre[class*="language-"] {
+            background: #272822;
+        }
+
+        
+    </code>
+</pre>
+
+</div>
+
+
+</body>
+<script src="prism.js"></script>
+
+</html>

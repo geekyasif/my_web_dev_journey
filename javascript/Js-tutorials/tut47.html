@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop in Javascript</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background-color: rgb(229, 236, 235);
+
+    }
+
+    .container {
+        display: flex;
+        margin: 120px 110px;
+
+    }
+
+    .heading {
+        margin: 30px 478px;
+    }
+
+
+    .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        background-color: white;
+        margin: 23px 34px;
+
+    }
+
+    .imgBox {
+        background-image: url('/practice/javascript-logo.png');
+        height: 190px;
+        width: 190px;
+        margin: 4px 5px;
+    }
+
+    /* js css */
+    /* dragstart */
+    .hold {
+        border: 2px solid red;
+
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .dragenter{
+     
+      background-color: indianred;
+    }
+
+  
+</style>
+
+<body>
+
+    <div class="heading">
+        <h1>Drag and Drop in Javascript</h1>
+    </div>
+    <div class="container">
+        <div class="box" id="first">
+            <div class="imgBox" draggable="true"></div>
+        </div>
+        <div class="box" id="second"></div>
+        <div class="box" id="third"></div>
+        <div class="box" id="fourth"></div>
+    </div>
+</body>
+<script>
+    console.log('drag and drop tutorial');
+
+    const img = document.querySelector('.imgBox');
+    const boxes = document.getElementsByClassName('box');
+    const para = document.querySelector('.paragraph')
+
+    // Event listener for draggable element imgBox
+    img.addEventListener('dragstart', (e) => {
+        // console.log('drag start has been triggered');
+
+        //css for border when dragstart
+        e.target.className += ' hold'
+
+        // timeout function 0 is use when the function wants to run in last 
+        setTimeout(() => {
+            e.target.className = ' hide'
+        }, 0);
+    });
+
+    img.addEventListener('dragend', (e) => {
+        // console.log('drag end has been triggered');
+        e.target.className = 'imgBox'
+       
+        
+    });
+
+
+    // iterate the all boxes and add evenet listener
+    for (box of boxes) {
+
+        box.addEventListener('dragover', (e) => {
+            // console.log('dragover has been triggered')
+            e.preventDefault();
+        })
+
+
+        box.addEventListener('dragenter', (e) => {
+            console.log('dragenteer has been triggered')
+            // e.target.className += 'dragenter'
+         
+          
+        });
+
+
+        box.addEventListener('dragleave', () => {
+            console.log('dragleave has been triggered')
+            
+
+        });
+
+
+        box.addEventListener('drop', (e) => {
+            // console.log('drop has been triggered')
+            e.target.append(img);
+          
+           
+        });
+    }
+
+</script>
+
+</html>

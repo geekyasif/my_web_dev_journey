@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed&display=swap" rel="stylesheet">
+    <title>Alignment,float and clear</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        h1{
+            margin: auto;
+            width: 535px;
+            padding: 20px 39px;
+        }
+
+        .container {
+            border: 2px solid black;
+            margin: 33px auto;
+            width: 900px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .items {
+            border: 2px solid crimson;
+            padding: 10px;
+            margin: 4px;
+            background-color: rgb(255, 253, 246);
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+
+
+        }
+
+        #vegitables {
+            float: right;
+            width: 48%;
+
+        }
+
+        #drink {
+            /* float: left; */
+            width: 100%;
+            clear: both;
+          
+        p {
+            text-align: left;
+            text-align: justify;
+
+        }
+
+        #header{
+            color:darkred
+        }
+
+     </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>welcome to my Grocery Store</h1>
+
+        <div id="fruit" class="items">
+            <h3>fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptates
+                maiores, soluta magnam minus eveniet iusto, ipsam qui nihil nam cum maxime doloremque sequi possimus
+                tenetur eligendi. Animi iure exercitationem a laboriosam maxime libero, neque nostrum ea laborum placeat
+                ipsam vel illo consequatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sapiente et
+                similique? Quia eum tempora consequuntur quos rerum laudantium? Quidem expedita adipisci obcaecati
+                numquam magni. Placeat praesentium vel temporibus ad nihil consequuntur possimus perspiciatis? </p>
+        </div>
+
+        <div id=vegitables class="items">
+            <h3>vegitables</h3>
+            <p id="vegitablespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptates
+                maiores, soluta magnam minus eveniet iusto, ipsam qui nihil nam cum maxime doloremque sequi possimus
+                tenetur eligendi. Animi iure exercitationem a laboriosam maxime libero, neque nostrum ea laborum
+                placeat
+                ipsam vel illo consequatur. Consectetur, ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Incidunt quisquam exercitationem omnis ducimus esse eveniet! Ea totam quos amet aspernatur fugit
+                praesentium quam dicta facere! Assumenda fugiat natus sunt dolore? Numquam impedit repellendus
+                exercitationem? </p>
+        </div>
+
+        <div id="drink" class="items">
+            <h3>Drinks</h3>
+            <p id="drinkpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                voluptates
+                maiores, soluta magnam minus eveniet iusto, ipsam qui nihil nam cum maxime doloremque sequi
+                possimus
+                tenetur eligendi. Animi iure exercitationem a laboriosam maxime libero, neque nostrum ea laborum
+                placeat
+                ipsam vel illo consequatur. Consectetur, ipsum.</p>
+        </div>
+
+        <div id="glasses" class="items">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                voluptates
+                maiores, soluta magnam minus eveniet iusto, ipsam qui nihil nam cum maxime doloremque sequi
+                possimus
+                tenetur eligendi. Animi iure exercitationem a laboriosam maxime libero, neque nostrum ea laborum
+                placeat
+                ipsam vel illo consequatur. Consectetur, ipsum.</p>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

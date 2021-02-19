@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises in javascript</title>
+</head>
+
+<body>
+    <h1>Promises in javascript</h1>
+</body>
+<script>
+
+// 1 - Define a function
+    function fun1() {
+
+// define prommise using constructor ,its take a function with free argument 
+// 1- Pending
+// 2- Resolve
+// 3- Reject
+// if the status were ok then resolve function will work else reject function
+        return new Promise(function (resolve, reject) {
+            setTimeout(() => {
+                if (this.status !== 200) {
+                    console.log("Resolving the Problem");
+                    resolve();
+                }
+                else {
+                    console.log("Rejecting the problem due to some error");
+                    reject('sorry');
+                }
+            }, 2000);
+        })
+    }
+
+// call the function with .then for when the function will resolve else .catch will run when the function is not resolve means reject
+ 
+    fun1().then(function () {
+        console.log("Succsesfull resolve");
+    }).catch(function (error) {
+        console.log("some error due to this your problem will not be solved " + error);
+    });
+
+
+
+</script>
+
+</html>

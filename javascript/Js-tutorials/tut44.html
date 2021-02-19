@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sets in javascript</title>
+</head>
+<body>
+    <h1>sets in javascript</h1>
+    <p>set is a constructor that store unique value</p>
+    <p>you cant store same value in set.It does not store same value</p>
+</body>
+<script>
+   
+    let set = new Set();
+    console.log('this is how set is look like', set);
+
+    // addding the value to the set
+    set.add('this');
+    set.add('that')
+    set.add(23)
+    set.add(false)
+    set.add(true)
+    // console.log(set);
+
+
+    // another way too store values in set in the form of array
+    let set2 = new Set([1,2,'hello',false,true,'this is another set',{object: 'this is a object inside the array'}])
+    // console.log(set2)
+
+    //to check the size of set
+    // console.log(set.size);
+
+    // to check the value of set
+    // console.log(set.has('this'));
+
+    // to delete any value from set if the value exits and deleted then it give true if not then it give false
+    console.log('before deleting the set',set)
+    console.log(set.delete('this'));
+    console.log('after deleting the set',set)
+
+
+    // iterating the set using for..lop and array.from each
+    // 1 for..loop
+
+    for(let item of set){
+        // console.log('items in set are by using for..loop :',item)
+    }
+
+    set.forEach((item) => {
+        console.log('items in set are by using forEach loop:',item)
+    });
+
+
+    // converting set into array
+    let array = Array.from(set)
+    console.log(array)
+
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <h1>Arrow Function in Javascript</h1>
+</body>
+<script>
+
+    // Normal function
+    function fun1() {
+        console.log("hello : This is a normal function");
+    }
+    fun1();
+
+
+    // Converting normal function into Arrow function
+    const fun2 = () => {
+        console.log("This is arrow function")
+    }
+    fun2();
+
+
+    // function return something
+    const wish = function () {
+        return (" Happy birthday dear");
+    }
+    console.log(wish());
+
+
+
+    // one line function do not required to use return keyword or braces
+    // one line automatically return use 
+    const greet = () => "Goood morning";
+    console.log(greet());
+
+
+    // arrow function returning object use braces
+    const greet2 = () => ({ fName: "Mohmmad", lName: "Asif" });
+    console.log(greet2());
+
+
+
+   // only one argument doesn't required any braces
+    const greet3 = name => "Happy birthday " + name;
+    console.log(greet3("Mohmmad Asif"));
+
+
+
+  // when there are two arguments then its requires braces 
+    const greet4 = (name, lastmsg) => "Happy birthday " + name + lastmsg;
+
+    console.log(greet4("Mohmmad Asif, ","I wish Allah will make your all dreams comes true"));
+
+</script>
+
+</html>

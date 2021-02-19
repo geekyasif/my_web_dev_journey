@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute-pseudo and nth-child pseudo selector</title>
+    <style>
+        .container {
+            display: block;
+            width: 500px;
+            margin: auto;
+        }
+
+        /* pseudo selector */
+        
+        a[target='_blank'] {
+            color: violet;
+        }
+
+        a[target='_self'] {
+            color: yellow;
+            background-color: brown;
+        }
+
+        input[type='text'] {
+            padding-left: 10px;
+        }
+
+        input[type='email'] {
+            background-color: darkblue;
+            padding: 5px 9px;
+            border: 2px solid red;
+        }
+
+        li[id='item2'] {
+            color: seagreen;
+            background-color: yellowgreen
+        }
+
+        /* nth-child pseudo selector */
+
+        /* it will apply css according to element line or in other word position  */
+        /* li:nth-child(5){
+            color:white;
+            background-color:chocolate;
+        } */
+
+        /* it will selct 2nd element and after it second and after upto nth */
+        /* li:nth-child(2n+0){
+            background-color: cornflowerblue;
+            color: white;
+        } */
+
+        /* for odd child */
+        /* li:nth-child(even){
+            background-color:red;
+            color: white;
+        }
+          */
+
+          /* for odd child */
+            li:nth-child(odd){
+            background-color:rgb(213, 3, 241);
+            color:white;
+        }
+         
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> pseudo and nth-child pseudo selector it is use for target a specific  attribute or tag or element</h1>
+        <h2>pseudo selector is use for selecting specific types of element and tags for applying css properties easily.(
+            synatx = _tag-name[target like class id ], example=input[type='email'] ) </h2>
+        <h1><a href="https://google.com" target="_blank">go to google </a></h1>
+        <h1><a href="https://facebook.cm" target="_self">go to facebook</a></h1>
+        <form action="" class="form-control">
+            <input type="email" placeholder="enter your email">
+            <input type="password" placeholder="enter your password">
+            <input type="text" placeholder="enter your name">
+            <input type="button" value="sumbit">
+        </form>
+        <ul>
+            <li class="item" id="item1"> 1 home</li>
+            <li class="item" id="item2"> 2 conatct</li>
+            <li class="item" id="item3">3 place</li>
+            <li class="item" id="item4">4 quarantine</li>
+            <li class="item" id="item5">5 about us</li>
+            <li class="item" id="item6">6 home</li>
+            <li class="item" id="item7">7 conatct</li>
+            <li class="item" id="item8">8 place</li>
+            <li class="item" id="item9">9 quarantine</li>
+            <li class="item" id="item10">10 about us</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

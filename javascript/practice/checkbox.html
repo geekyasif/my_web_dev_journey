@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+</head>
+<body>
+    <div class="container">
+        <div class="checkbox">
+            <select name="" id="checkbox">
+            <option value="Codewithharry">Codewithharry</option>
+            <option value="CodewithTelusko">CodewithTelusko</option>
+            <option value="CodewithThapaTechnical">CodewithThapaTechnical</option>
+        </select>
+        <button id="submitBtn" value="Submit">Submit</button>
+        </div>
+    </div>
+</body>
+<script>
+    let submitbtn = document.getElementById("submitBtn");
+    submitbtn.addEventListener("click",function(){
+
+         let checkbox = document.getElementById('checkbox');
+         alert(checkbox.options[checkbox.selectedIndex].value);
+
+         console.log("Successfull")
+    });
+</script>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quaries for responsive website</title>
+    <style>
+        .box {
+            font-size: 70px;
+            background-color: chocolate;
+            color: white;
+            display: none;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 400px) {
+            #box1 {
+                display: block;
+                background-color: cornflowerblue;
+                color: crimson;
+            }
+        }
+        @media only screen and (min-width: 400px) and (max-width: 800px) {
+            #box2 {
+                display: block;
+                background-color: green;
+                color: white;
+            }
+        }
+        @media  only screen and (min-width: 800px) and (max-width: 1300px) {
+            #box3 {
+                display: block;
+                background-color: yellow;
+                color: black;
+            }
+        }
+        @media  only screen and (min-width: 1300px) {
+            #box4 {
+                display: block;
+                background-color: red;
+                color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>media queries is basically if condition if we write css under mediea queries then it will run according to its condition</p>
+
+    <div class="box" id="box1">mai ek phone hoon</div>
+    <div class="box" id="box2">mai ek tablet hoon</div>
+    <div class="box" id="box3">mai ek laptop hoon</div>
+    <div class="box" id="box4">mai ek desktop hoon</div>
+</body>
+
+</html>

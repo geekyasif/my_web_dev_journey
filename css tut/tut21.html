@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables and custom properties</title>
+    <style>
+        /* this is global variable here you once declare and you can use it anywhere */
+        :root{
+            /* --danger-color: red;
+            --blue-color: blue; */
+            --max-width: 1040px;
+         }
+
+         .container{
+                 
+            border: 2px solid black;
+            max-width: var(--max-width);
+         }
+        .box {
+            width: 250px;
+            height: 250px;
+            margin: 9px 9px;
+        }
+
+        #box-1 {
+            /* this is local variable this work only in its own scope */
+            --danger-color: red;
+            background-color: var(--danger-color);
+            box-shadow: 3px 4px var(--danger-color);
+            color: white;
+            text-align: center;
+        }
+
+        #box-2 {
+            color: white;
+            text-align: center;
+            --blue-color: blue;
+            background-color: var(--blue-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box-1">this is first box</div>
+        <div class="box" id="box-2">this is second box</div>
+    </div>
+</body>
+
+</html>

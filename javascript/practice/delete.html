@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete</title>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="text" placeholder="Enter Text Here">
+        <input id="submitBtn" type="submit" value="Submit">
+        <ul id="list" ></ul>
+    </div>
+</body>
+<script>
+    let submitBtn = document.getElementById("submitBtn");
+    submitBtn.addEventListener('click', function () {
+        let text = document.getElementById("text").value;
+
+        let ul = document.getElementById("list");
+        
+        ul.innerHTML += `<li>${text}</li>`;
+    })
+
+   
+</script>
+
+</html>

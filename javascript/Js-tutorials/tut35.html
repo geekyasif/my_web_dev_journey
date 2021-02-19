@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>
+</head>
+
+<body>
+    <h3>Callback functions</h3>
+    <p>function inside the function is called Callback function</p>
+    <h1>Students list</h1>
+    <div class="container">
+        <ul id="list"></ul>
+    </div>
+</body>
+<script>
+    let students = [
+        { name: "rohan", language: "javaScript" },
+        { name: "haris", language: "java" }
+    ]
+
+    function enrollStudent(newStudent, callback) {
+        setTimeout(function () {
+            students.push(newStudent);
+            console.log("students have been enrolled");
+            callback();
+        }, 4000);
+    }
+
+    function getStudents() {
+        setTimeout(function () {
+            let str = "";
+            students.forEach(function (students) {
+                str += `<li>${students.name}</li>`
+            });
+
+            let list = document.getElementById('list');
+            list.innerHTML = str;
+            console.log("students have been fetch");
+
+        }, 2000);
+    }
+
+    let newStudent = { name: "asif", language: "python" }
+    enrollStudent(newStudent,getStudents);
+
+
+</script>
+
+</html>

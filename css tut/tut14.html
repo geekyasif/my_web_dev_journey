@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility and z-index</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            width: 250px;
+            height: 250px;
+        }
+
+        #box1 {
+            position: relative;
+            top: 36px;
+            z-index: 66;
+            background-color: brown;
+
+
+        }
+
+        #box2 {
+            position: relative;
+            top: 16px;
+            /* z-index: -50px; */
+            background-color: rgb(76, 204, 25);
+            /* visibility:hidden ;    for hidden the content but space is reserve */
+            /* display:none;         for hide the content but is not reserve */
+
+        }
+
+        #box3 {
+            background-color: rgb(22, 139, 218);
+        }
+
+        #box4 {
+            background-color: rgb(230, 44, 168);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>visibility property</h1>
+    <p>visibility - hidden ----- /* for hidden the content but space is reserve */ <br>
+        display - none ----- /*for hide the content but is not reserve*/ </p>
+    <h1>z-index property</h1>
+    <p>it is use to overwrite the content</p>
+    <p>greater the z-index more the content overwrite or overcome on another</p>
+    <p>z-index property will only work with position property like absolute,sticky,relative,fixed</p>
+    <div class="box" id="box1">box1</div>
+    <div class="box" id="box2">box2</div>
+    <div class="box" id="box3">box3</div>
+    <div class="box" id="box4">box4</div>
+</body>
+
+</html>

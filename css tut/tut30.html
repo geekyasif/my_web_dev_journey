@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width: 400px) {
+            body {
+                background-color: cornflowerblue;
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'footer footer footer footer';
+            }
+            nav {
+                text-align: center;
+            }
+
+
+            nav ul li{
+                 display: block;
+            }
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 800px) {
+            body {
+                background-color: green;
+            }
+
+           
+        }
+
+        @media only screen and (min-width: 800px) and (max-width: 1300px) {
+            body {
+                background-color: yellow;
+            }
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media only screen and (min-width: 1300px) {
+            body {
+                background-color: red;
+            }
+        }
+
+
+        /* container section */
+
+        .container {
+            /* to set the display */
+            display: grid;
+            grid-gap: 1rem;
+            /* grid template areas  */
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+
+        .item {
+            border: 2px solid black;
+            color: white;
+            padding: 23px 12px;
+            background-color: cadetblue;
+        }
+
+        nav{
+            grid-area: navbar;
+        }
+
+        section{
+            grid-area: section;
+        }
+
+        aside{
+            grid-area: aside;
+        }
+
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="item">
+           <ul>
+               <li>home</li>
+               <li>about</li>
+               <li>contact</li>
+           </ul>
+        </nav>
+
+        <section class="item">
+            <h2>learn css in hinid with media quaries</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aut atque quibusdam assumenda
+                accusamus commodi modi, dolores aspernatur numquam at eveniet exercitationem voluptatem alias, similique
+                nesciunt fugit quod eum maxime! Soluta quo rerum praesentium! </p>
+        </section>
+
+        <aside class="item">
+            <h2>categories categories categories</h2>
+            <ul>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="item">
+        <h3>Copyright @ HacklikeAnonymous 2020</h3>
+    </footer>
+
+</body>
+
+</html>

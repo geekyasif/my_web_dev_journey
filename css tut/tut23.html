@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating transition effects</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: blueviolet;
+            justify-content: center;
+
+            /* transition property  */
+            transition-property: all;
+            /* transition-delay: 1s; */
+            /* transition-duration: 1s; */
+            /* transition-timing-function: ease-in; */
+
+            /* short hand property in one line  */
+            /* transition-property: background-color transition-delay transition-duration transition-timing-function; */
+            
+            /* multiple transition peroperty */
+            /* transition-property: all 3s ease-in ,3s; */
+
+        }
+
+        #box:hover{
+            background-color: rgb(196, 47, 233);
+            height: 205px;
+            width: 205px;
+            cursor: pointer;
+            /* border-radius: 30px; */
+            /* font-size: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <h1>this is transition effects tutorial</h1>
+    <div class="container">
+        <div id="box">
+            this is my box
+        </div>
+    </div>
+</body>
+</html>

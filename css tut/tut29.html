@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid template area</title>
+    <style>
+        .container {
+            /* to set the display */
+            display: grid;
+
+            /* grid template areas  */
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                ' main main main main'
+                'section section section aside-1'
+                'section section section aside-2'
+                'footer-1 footer-1 footer-1 footer-1'
+                'footer-2 footer-2 footer-2 footer-2';
+                
+       
+
+        }
+
+        .item {
+            display: grid;
+            background-color: rgb(67, 253, 160);
+            border: 2px solid black;
+            padding: 23px 3px;
+            margin: 5px;
+        }
+
+        /* navbar section */
+
+        #navbar {
+            grid-area: navbar;
+            display: flex;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        #navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        #navbar ul li {
+            padding: 23px 13px;
+        }
+
+        #navbar p {
+            position: absolute;
+            top: 50px;
+            right: 30px;
+        }
+
+        /* main-section */
+        #main {
+            grid-area: main;
+            width: 80%;
+            height: 300px;
+            margin: auto;
+        }
+
+        /* section */
+
+        #section {
+            grid-area: section;
+            width: 70%;
+            margin-left: 128px;
+        }
+
+        /* aside bar section */
+        #aside-1 {
+            grid-area: aside-1;
+            width: 93%;
+            position: relative;
+            left: -117px;
+            height: 300px;
+        }
+
+        #aside-2 {
+
+            height: 200px;
+            grid-area: aside-2;
+            width: 93%;
+            position: relative;
+            top: -98px;
+            left: -117px;
+
+
+        }
+
+        /* footer-section */
+
+        #footer-1 {
+            grid-area: footer-1;
+        }
+
+        #footer-2 {
+            grid-area: footer-2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <h1>HackLikeAnonymous</h1>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+                <li>more</li>
+            </ul>
+            <p>search</p>
+        </div>
+
+        <div id="main" class="item">
+            <h1>main section</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore oribus.</p>
+        </div>
+
+
+        <div id="section" class="item">
+            <h1>Recent Post</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptate ipsam possimus placeat,
+            mollitia dolores recusandae laudantium iure optio. Quidem quam aut a magnam impedit, illo et neque. Optio
+            debitis consequuntur iste esse odit illo reiciendis laboriosam, quibusdam eius repudiandae aspernatur
+            officia velit eos qui harum quia ea impedit aliquam doloribus cupiditate magni libero nulla! Officiis
+            voluptatem repellat provident vitae libero et blanditiis quod optio est atque exercitationem iste mollitia
+            voluptatum impedit accusamus explicabo laborepellendus quis, eius dolores rem eaque laudantium voluptatum
+            labore reprehenderit ab assumenda deserunt tenetur sequi quisquam molestias cumque? Voluptatem blanditiis
+            quas officiis facilis praesentium? Recusandae velit hic quidem sapiente, officiis temporibus, consequatur
+            alias vero itaque iusto rem! Fugit obcaecati consequuntur voluptas id eos iure perspiciatis amet inventore,
+            beatae atque deserunt necessitatibus error dignissimos, animi officia eligendi? Similique modi quas ducimus
+            quasi minus nulla laboriosam at, a molestias et excepturi ipsum illo porro dolores itaque debitis commodi in
+            necessitatibus amet vitae vel autem error! Perspiciatis quos similique vel, exercitationem explicabo maiores
+            ullam nostrum vitae laboriosam, excepturi totam esse quisquam corrupti sint voluptatum dolores sequi?
+            Voluptatum eius labore dolores, cum maxime nobis atque sunt, voluptas corporis, iure beatae necessitatibus
+            dolorem tenetur omnis blanditiis ea voluptatem autem quos id voluptatibus nesciunt sed culpa unde. Aut quam
+            porro ducimus sunt minus consequatur laudantium cupiditate veniam dolores! Modi beatae unde in ab porro
+            ipsam soluta sed cupiditate nostrum. Cupiditate aspernatur facere aperiam quaerat earum facilis reiciendis,
+            corporis dolores molestias porro laudantium neque dolor harum quae sunt soluta quos fuga non repudiandae,
+            doloribus omnis eos tempora! Explicabo eius delectus voluptatem. Iure eligendi voluptate maxime cum deserunt
+            exercitationem obcaecati, laborum fugiat. Doloribus,iosam aliquam alias neque quas omnis, fugiat error?
+            Nihil magnam doloribus illo repellendus vel necessitatibus tempore aliquam quos, praesentium ullam quia,
+            distinctio, autem dolor perferendis eum! Magni nostrum ullam, repellendus quis, eius dolores rem eaque
+            laudantium voluptatum labore reprehenderit ab assumenda deserunt tenetur sequi quisquam molestias cumque?
+            Voluptatem blanditiis quas officiis facilis praesentium? Recusandae velit hic quidem sapiente, officiis
+            temporibus, consequatur alias vero itaque iusto rem! Fugit obcaecati consequuntur voluptas id eos iure
+            perspiciatis amet inventore, beatae atque deserunt necessitatibus error dignissimos, animi officia eligendi?
+            Similique modi quas ducimus quasi minus nulla laboriosam at, a molestias et excepturi ipsum illo porro
+            dolores itaque debitis commodi in necessitatibus amet vitae vel autem error! Perspiciatis quos similique
+            vel, exercitationem explicabo maiores ullam nostrum vitae laboriosam, excepturi totam esse quisquam corrupti
+            sint voluptatum dolores sequi? Voluptatum eius labore dolores, cum maxime nobis atque sunt, voluptas
+            corporis, iure beatae necessitatibus dolorem tenetur omnis blanditiis ea voluptatem autem quos id
+            voluptatibus nesciunt sed culpa unde. Aut quam porro ducimus sunt minus consequatur laudantium cupiditate
+            veniam dolores! Modi beatae unde in ab porro ipsam soluta sed cupiditate nostrum. Cupiditate aspernatur
+            facere aperiam quaerat earum facilis reiciendis, corporis dolores molestias porro laudantium neque dolor
+            harum quae sunt soluta quos fuga non repudiandae, doloribus omnis eos tempora! Explicabo eius delectus
+            voluptatem. Iure eligendi voluptate maxime cum deserunt exercitationem obcaecati, laborum fugiat. Doloribus,
+            error dolore!
+        </div>
+
+        <div id="aside-1" class="item">
+            <h4>Most recent Post</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores minima veritatis similique! Tempora
+                mollitia voluptatibus cumque.</p>
+        </div>
+
+        <div id="aside-2" class="item">
+            <h2>Categories</h2>
+            <ul>
+                <li>Hacking</li>
+                <li>Hacking</li>
+                <li>Hacking</li>
+                <li>Hacking</li>
+                <li>Hacking</li>
+            </ul>
+        </div>
+
+        <div id="footer-1" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptas! adipisicing elit. Nobis, voluptas!
+        </div>
+
+        <div id="footer-2" class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, delectus.
+        </div>
+
+
+    </div>
+</body>
+
+</html>

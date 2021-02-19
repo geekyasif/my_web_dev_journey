@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid autofit and minmax</title>
+    <style>
+        .grid{
+                /* to set the display */
+                display: grid;
+
+                /* it is use to make resposive website */
+                grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+        }
+        .box{
+            display: grid;
+            background-color: rgb(67, 253, 160);
+            border: 2px solid black;
+            padding: 23px 3px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>  grid-template-columns:repeat(auto-fit, minmax(300px,1fr));</h1>
+    <p>it is use to make responsive website</p>
+      <div class="grid">
+          <div class="box" id="box1">this is a box-1</div>
+          <div class="box" id="box2">this is a box-2</div>
+          <div class="box" id="box3">this is a box-3</div>
+          <div class="box" id="box4">this is a box-4</div>
+          <div class="box" id="box5">this is a box-5</div>
+          <div class="box" id="box6">this is a box-6</div>
+          <div class="box" id="box7">this is a box-7</div>
+          <div class="box" id="box8">this is a box-8</div>
+          <div class="box" id="box9">this is a box-9</div>
+          <div class="box" id="box10">this is a box-10</div>
+          <div class="box" id="box11">this is a box-11</div>
+          <div class="box" id="box12">this is a box-12</div>
+      </div>
+</body>
+</html>

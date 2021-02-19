@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <title>before and after pseudo selectors</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+          /* this tut is basically for this secton */
+        /* this is the main part of this content header::::before */
+
+        header::before{
+            background: url('laptop.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;   /* top 0 and left zero hide the black part at  the top */
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+
+
+
+        .navigation{
+            display: flex;
+            font-size: 15px;
+        }
+        
+        li{
+            list-style: none;
+            text-transform: uppercase;
+            padding: 2px 24px;
+        }
+
+        li:hover{
+            background-color: black;
+            cursor: pointer;
+            border-radius: 22px;
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 100px;
+            text-transform: uppercase;
+        }
+
+        /* section::before{
+            content:"this is a before pseudo selector"
+        }
+
+        section::after{
+            content:"this is a after pseudo selector"
+            } */
+
+
+        section h1{
+            font-size: 3rem;
+            margin: 5px 9px;
+        }
+
+        section p{
+            text-align: center;
+            padding: 0px 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li>home</li>
+                <li>about</li>
+                <li>categories</li>
+                <li>contact us</li>
+            </ul>
+        </nav>
+    </header>
+
+       <section>
+           <h1>welcome to raza arts</h1>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatibus eos. Est Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, nobis. maiores sunt. Voluptates, sequi!</p>
+       </section>
+       <div class="content">
+           <h1>Before and after psudo selector</h1>
+           <p>Before and after pseudo selecor is use for the background image opacity which help to read the content</p>
+       </div>
+</body>
+</html>

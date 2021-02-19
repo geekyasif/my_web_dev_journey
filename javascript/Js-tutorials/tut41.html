@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generators in Javascripts</title>
+</head>
+<body>
+    <h1>Generators in Javascripts</h1>
+    <p>it is use to generate large number without storing into a variable or in ram.</p>
+    <p>advantage of generator is to when ever you need a large number then you dont have to store that large number always by the help of generator you just generate when it needs</p>
+</body>
+<script>
+
+// create the generator function
+  function* Generator(){
+           yield 1;
+           yield 2;
+           yield 3;
+           yield 4;
+           yield 5;
+  }
+
+// assing the function into a variable 
+const gen = Generator();
+
+// call the function or just simply print 
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
+
+</script>
+</html>

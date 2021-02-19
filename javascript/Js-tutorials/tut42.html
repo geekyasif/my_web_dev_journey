@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Welcome to CV Screener</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h1 class="my-3">Candidate Applications for Software Developer Job</h1>
+                <div id="image"></div>
+                <br>
+                <div id="profile"></div>
+                <br>
+                <button class="btn btn-primary btn-block" id="nextBtn"> Next</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script>
+
+        let data = [
+            {
+                Name: 'Mohammad Asif',
+                Branch: 'Bca',
+                Age: 21,
+                language: 'Javascript',
+                image: 'https://randomuser.me/api/portraits/men/21.jpg'
+            },
+            {
+                Name: 'Irshad Akram',
+                Branch: 'Computer Science',
+                Age: 22,
+                language: 'C',
+                image: 'https://randomuser.me/api/portraits/men/23.jpg'
+            },
+            {
+                Name: 'Shabaj Akram',
+                Branch: 'Mca',
+                Age: 23,
+                language: 'Python',
+                image: 'https://randomuser.me/api/portraits/men/34.jpg'
+            },
+            {
+                Name: 'Mohammad Haris',
+                Branch: 'Computer Science',
+                Age: 25,
+                language: 'Php',
+                image: 'https://randomuser.me/api/portraits/men/12.jpg'
+            },
+            {
+                Name: 'Sundari Sharma',
+                Branch: 'Compuer Science',
+                Age: 45,
+                language: 'Java,android developer',
+                image: 'https://randomuser.me/api/portraits/women/32.jpg'
+            }
+
+        ]
+
+
+        //   first create a iterator function
+
+        function cvProfile(profile) {
+            let nextIndex = 0;
+            return {
+                next: function () {
+                    if (nextIndex < profile.length) {
+                        return {
+                            value: profile[nextIndex++],
+                            done: false
+                        }
+                    }
+                    else {
+                        return {
+                            done: true
+                        }
+                    }
+                }
+            }
+        }
+
+        const candidates = cvProfile(data);
+        nextCv();
+        // console.log(candidate.next().value);
+
+        let nextBtn = document.getElementById('nextBtn');
+        nextBtn.addEventListener('click', nextCv);
+
+        function nextCv() {
+            const currentCandidate = candidates.next().value;
+            // console.log(currentCandidate);
+
+            let img = document.getElementById('img');
+            let profile = document.getElementById('profile');
+            if (currentCandidate != undefined) {
+
+                // img.innerHTML += `<img scr="${currentCandidate.image}">`;
+
+                profile.innerHTML = `<ul class="list-group">
+                                            <li class="list-group-item">Name: ${currentCandidate.Name}</li>
+                                            <li class="list-group-item">Branch: ${currentCandidate.Branch}</li>
+                                            <li class="list-group-item">Age: ${currentCandidate.Age}</li>
+                                            <li class="list-group-item">Primarily works on ${currentCandidate.language}</li>
+                                    </ul>`
+            }
+            else {
+                // alert('End of candidate applications');
+                window.location.reload();
+            }
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+
+</html>

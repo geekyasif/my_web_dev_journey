@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Position Property</title>
+    <style>
+
+        .container{
+            border: 2px solid red;
+            background: rgb(248, 161, 161);
+            height: 3334px;
+        }
+        .box {
+            border: 2px solid black;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            background-color: dodgerblue;
+        }
+
+        #box3 {
+            /* position: absolute;
+            top: 34px;
+            left: 38px; */
+
+                /* position fixed the psition of the element relative to the browser windows */
+            
+            /* position: fixed;
+            right: 23px;
+            bottom: 0px; */
+
+          position: sticky;
+          top: 3px;
+        
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Position-absolute,relative,fixed,sticky</h1>
+    <h4>position-static- default postion of the block</h4>
+    <h4>Position-absolute - (relative to the parent) the Position of the block are overlap to each other</h4>
+    <h4>Position-relative - relative to its normal position and will leave a gap at its normal position</h4>
+    <h4>postion-fixed - means where you set the positon of the block.block will fixed at that position</h4>
+    <h4>positon sticky - it scroll with the scroll bar and it is use for making menu </h4>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

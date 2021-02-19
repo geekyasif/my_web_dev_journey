@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+
+    <!-- 
+     display inline - means take space according to need
+     display block -  means take all block element -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            /* margin: auto;                  margin auto use to take the elment in the center */
+            border: 2px solid grey;
+            /* width: 25%; */
+            background-color: #9abbc6;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif margin: 0px;
+            text-align: center;
+            color: white;
+        }
+
+        img {
+            margin: auto;
+            width: 100px;
+            display: block;
+            /*image is a inline display so apply display block css property */
+        }
+
+        .box {
+            border: 2px solid black;
+            background-color: rgb(241, 202, 248);
+            margin: 3px auto;
+            padding: 23px;
+            display: inline-block;
+            width: 33.1%;
+            text-align: justify;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+
+        <!-- image tag is inline tag so if you want to take the image in the center the you have do (display:block) css property -->
+
+        <img src="logo.png" alt="logo">
+        <h1>Hack Like Anonymous</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipis icing elit. Totam atque, molestias debitis repreh nderit
+                quas fuga, voluptatem recusandae illum quae ut libero ullam ea dolorem deleniti vitae itaque quaerat
+                quasi sapiente quis. Nostrum ipsa sunt non dolore, minima dolorem at commodi!</p>
+        </div>
+
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam atque, molestias debitis repre henderit
+                quas fuga, voluptatem recusandae illum quae ut libero ullam ea dolorem deleniti vitae itaque quaerat
+                quasi sapiente quis. Nostrum ipsa sunt non dolore, minima dolorem at commodi!</p>
+        </div>
+
+
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam atque, molestias debitis repre henderit
+                quas fuga, voluptatem recusandae illum quae ut libero ullam ea dolorem deleniti vitae itaque quaerat
+                quasi sapiente quis. Nostrum ipsa sunt non dolore, minima dolorem at commodi!</p>
+        </div>
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>

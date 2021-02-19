@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterators in javascript</title>
+</head>
+<body>
+   <h1> Iterators in javascript</h1>
+</body>
+<script>
+
+// first create an array of objects
+let array = ['apple', 'rohan', 'alexa', 'google', 'microsoft'];
+
+
+// then create a iterator function 
+function iterator(value){
+    let nextIndex = 0;
+    return {
+        next: function(){
+            if(nextIndex < value.length){
+            return{
+                  value: value[nextIndex++],
+                  done: false
+            }
+          }
+          else{
+              return{
+                  done: true
+              }
+          }
+        }
+    }
+}
+
+
+// then put the array of object into iterator and assign the value into a variable
+let object = iterator(array);
+
+// print the value of the array of object by calling again and again and get next value always
+console.log(object.next().value);
+console.log(object.next().value);
+console.log(object.next().value);
+console.log(object.next().value);
+console.log(object.next().value);
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid system</title>
+    <style>
+        .container{
+                /* to set the display */
+                display: grid;
+
+               /* to set the width of the columns */
+                grid-template-columns: 300px 100px 100px;
+                grid-template-columns: 300px auto 100px;
+                grid-template-columns: 300px 100px auto ;
+                grid-template-columns: 1fr 4fr 1fr;
+                grid-template-columns: repeat(9,auto);
+
+                /* for gap between column */
+                grid-gap: 6rem;
+                
+        }
+        .item{
+            background-color: brown;
+            border: 2px solid black;
+            padding: 12px 3px;
+            /* margin: 5px; */
+        }
+    </style>
+</head>
+<body>
+      <div class="container">
+          <div class="item">this is a box-1</div>
+          <div class="item">this is a box-2</div>
+          <div class="item">this is a box-3</div>
+          <div class="item">this is a box-4</div>
+          <div class="item">this is a box-5</div>
+          <div class="item">this is a box-6</div>
+          <div class="item">this is a box-7</div>
+          <div class="item">this is a box-8</div>
+          <div class="item">this is a box-9</div>
+      </div>
+</body>
+</html>

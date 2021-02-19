@@ -1,0 +1,2 @@
+Featured snippet from the web
+XMLHttpRequest (XHR) is an API in the form of an object whose methods transfer data between a web browser and a web server. ... Despite the name, XHR can be used with protocols other than HTTP and data can be in the form of not only XML, but also JSON, HTML or plain text.

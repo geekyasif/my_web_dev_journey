@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation and keyfame</title>
+    <style>
+        .container {
+            background-color: cadetblue;
+        }
+
+        .box {
+            background-color: crimson;
+            color: white;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            /* some steps are follow for animation property */
+
+            /* step 1 set animation name */
+            /* animation-name: asif; */
+            animation-name: asif2;
+
+            /* step 2 animation duration */
+            animation-duration: 8s;
+
+            /* step 3 animation iteration count means how many times it run  */
+            animation-iteration-count: 4;
+
+            animation-fill-mode: alternate;
+
+            /* first in start it will move slow and after it become fast */
+
+            /* animation-timing-function: ease-in; */
+
+            /* fist it will start fast and then become slow */
+
+            /* animation-timing-function:ease-in-out; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+
+            /* start according to your gievn time */
+            /* animation-delay: 2s; */
+
+            /* animation direction from where to start and where to end */
+            /* animation-direction: reverse; */
+
+            /* animation short hand property */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+            animation: asif2 8s ease-in 2s 4 alternate;
+
+        }
+
+        /* here with animation name we apply animation with @keyframe */
+        /* @keyframes asif{
+            from{
+          width: 200px;
+            }
+            to{
+           width: 1000px;
+            }
+        } */
+
+
+        @keyframes asif2 {
+            0% {
+                   top: 0px;
+                   left: 0px;
+            }
+
+            25% {
+                   top:250px;
+                   left:0px;            }
+
+            75% {
+                    top: 250px;
+                    left: 250px;
+            }
+
+            100% { 
+                    left: 250px;
+                    top: 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+        <h1>animation propertys</h1>
+        <p>1 - animation transition property</p>
+        <p>2 - animation transformation property</p>
+    </div>
+</body>
+
+</html>
