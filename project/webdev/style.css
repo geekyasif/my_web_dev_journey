@@ -1,0 +1,60 @@
+#body{
+    background-color: #e7edf3;
+  
+}
+
+/* navbar ul */
+.mr-auto {
+    margin-left: 630px;
+    font-size: 1.1rem;
+}
+
+.navbar-expand-lg .navbar-nav {
+    font-weight: 600;
+}
+
+
+/* cards */
+.card {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* transition: 0.3s linear; */
+    border: 0px;
+    cursor: pointer;
+    animation: linear 0.3s;
+}
+
+/* sidenav recent and category and search */
+
+
+.border-bottom {
+    border-bottom: 2px solid #dee2e6 !important;
+    padding: 7px;
+}
+
+.search{
+    margin-bottom: 12px;
+}
+
+/* recent-post-title */
+.stretched-link { 
+   font-weight: 600;
+   color: #222222;
+}
+
+
+
+
+/* footer */
+.footer {
+    background-color: #222222;
+    padding: 20px;
+    color: white;
+    margin-top: 70px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}

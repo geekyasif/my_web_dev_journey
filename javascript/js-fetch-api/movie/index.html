@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    hellp 2or
+<body>
+    
+</body>
+<script>
+
+    fetch("https://ott-details.p.rapidapi.com/getPlatforms?region=IN", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": "51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a",
+            "x-rapidapi-host": "ott-details.p.rapidapi.com"
+        }
+    })
+    .then(response => {
+        console.log(response);
+    })
+    .catch(err => {
+        console.error(err);
+    });
+</script>
+</html>

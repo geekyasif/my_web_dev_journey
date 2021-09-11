@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.pexels.com/photo/white-and-black-daisy-flowers-7535097/" alt="">
+       
+    </div>
+    
+
+
+</body>
+
+<script >
+
+    console.log("working")
+    
+    
+    let container = document.getElementsByClassName("container")
+
+    
+    
+    fetch("https://api.pexels.com/v1/search?query=nature",{
+      headers: {
+        Authorization: "563492ad6f917000010000014d683c830712401d8ef94a00f6ff2980"
+      }
+    })
+       .then(resp => {
+         return resp.json()
+       })
+       .then(data => {
+         console.log(data.photos)
+         const images = data.photos
+            images.map( (img) => {
+                console.log(img.url)
+                console.log(img.photographer)
+    
+               let cardTag = `<p>${img.photographer}</p>
+                              <img src=${img.src.tiny} alt="">`;
+                
+                 container.innerHTML += cardTag;
+            })
+       })
+    
+    
+       
+    
+    
+    
+    </script>
+
+
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar logo and image*/
+#logo{
+    margin: 2px 3px;
+
+}
+
+#logo img{
+    margin: 7px 20px;
+    height: 39px;
+}
+
+/* navigation bar */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before{             /* for transparent navbar */
+  content:"";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 5;
+}
+
+
+
+/* navbar list  */
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* section : home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+#home::before{
+    background-repeat: no-repeat;
+    background-position: center;
+    content:"";
+    background-image: url('../cyber.jpg');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    
+}
+
+/* utilitis classes */
+
+#home h1{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.h-primary{
+    
+    font-size: 2.8rem;
+    padding: 12px;
+}

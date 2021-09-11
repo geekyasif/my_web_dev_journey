@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* background-color: wheat; */
+        }
+        main{
+            margin:33px auto;
+            width: 90%;
+            border: 2px solid rgb(0, 0, 0);
+            display: grid;
+            grid-template-rows: 60px 100px 200px 60px;
+            grid-template-columns: repeat(3,1fr) 150px;
+            grid-gap: 20px;
+            padding: 3px;
+            color: white;
+
+        }
+        .box1{
+                  grid-column:1/-1;
+            /* border: 2px solid black; */
+            background-color: brown;
+           text-align: center;
+           padding: 20px;
+        }
+        .box2{
+            /* border: 2px solid black; */
+            background-color: coral;
+        }
+        .box3{
+            /* border: 2px solid black; */
+            background-color: darkcyan;
+        }
+        .box4{
+            /* border: 2px solid black; */
+            background-color: darkorange;
+        }
+        .box5{
+            /* border: 2px solid black; */
+            background-color: darkturquoise;
+            grid-row: 2/4;
+           grid-column: 4/5;
+        }
+        .box6{
+            /* border: 2px solid black; */
+            background-color: forestgreen;
+            grid-column: 1/ 4;
+        }
+        .box7{
+            /* border: 2px solid black; */
+            background-color: hotpink;
+            grid-column: 1/-1;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="box1">Hack Like Anonymous</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">Categories</div>
+        <div class="box6">main content</div>
+        <div class="box7">footer</div>
+    </main>
+</body>
+
+</html>

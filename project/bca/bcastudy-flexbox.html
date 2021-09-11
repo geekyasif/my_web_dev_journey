@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* website container */
+        .container {
+            border: 2px solid black;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+      /* top navbar */
+    .topnav{
+        display: flex;
+        border: 2px solid purple;
+        margin: 2px 2px;
+        justify-content: space-between;
+    }
+
+    .enquiry{
+        border: 2px solid turquoise;
+        margin: 2px;
+    }
+
+    .socialmedia{
+        border: 2px solid lightcoral;
+        margin: 2px;
+    }
+
+        /* website name and navbar */
+
+        #head{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border: 2px solid tomato;
+            margin: 2px;
+            background-color: lightblue;
+            color: white;
+        }
+
+        .headname{
+            border: 2px solid goldenrod;
+            margin: 2px;
+        }
+
+        /* navbar */
+
+        .navbar{
+            display: flex;
+            border: 2px solid green;
+            margin: 2px;
+        
+        }
+
+        .navbar nav{
+            
+            
+        }
+        .navbar nav ul{
+
+        }
+        .navbar nav ul li{
+            list-style: none;
+            float: left;
+            text-transform: uppercase;
+            padding: 2px 53px;
+        }
+
+        .navbar ul li:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* main website name */
+
+        .mainintro {
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid black;
+            flex-direction: column;
+            justify-content: center;
+            width: 99.5%;
+            height: 240px;
+            margin:2px;
+        }
+
+        .intro {
+            border: 2px solid red;
+            text-align: center;
+            margin: 1px auto;
+        }
+
+        .select {
+            margin: 1px auto;
+            border: 2px solid blue;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="topnav">
+                <div class="enquiry">
+                    <h3>Contact us on - 9161807416</h3>
+                </div>
+
+                <div class="socialmedia">
+                    <p>Follow me on - </p>
+                    <a class="media"  id="facebook" href="#">facebook</a>
+                    <a class="media"  id="instagram" href="#">instagram</a>
+                    <a class="media" id="twitter" href="#">twiter</a>
+                </div>
+        </div>
+
+        <head>
+
+            <div id="head">
+
+                <div class="headname">
+                    <h3>BCA STUDY</h3>
+                </div>
+
+               <div class="navbar">
+
+                   <nav>
+                       <ul>
+                           <li>home</li>
+                           <li>about</li>
+                           <li>contact</li>
+                           <li>contact</li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </head>
+
+        <div class="mainintro">
+
+            <div class="intro">
+                <h1>WELCOME TO BCA STUDY</h1>
+                <p>Knowledge Is Power</p>
+            </div>
+
+            <div class="select">
+                <select id="subject">
+                    <option value="">select subject</option>
+                    <option value="english">english</option>
+                    <option value="maths">maths</option>
+                    <option value="c programming">c programming</option>
+                </select>
+
+                <select id="semester">
+                    <option value="">select semester</option>
+                    <option value="english">sem 1st</option>
+                    <option value="maths">sem 2nd</option>
+                    <option value="c programming">sem 3rd</option>
+
+                    <div class="button">
+                        <input type="button" value="fuck you">
+                    </div>
+
+                </select>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

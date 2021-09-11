@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box all properties</title>
+    <style>
+        .container {
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+            /* flex direction ->>> properties for container */
+            /* flex-direction: row;  (by default) */
+            /* flex-direction:column; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* flex flow -->> for short hand 2 properties in one line */
+            /* for direction and wrap */
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content:  for horizontal; */
+
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+
+            /* align-content:  is for vertical; */
+
+            /* align-content: center; */
+            /* align-content:stretch; */
+            /* align-content: flex-end; */
+        }
+
+        .box {
+            background-color: hotpink;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            width: 150px;
+            height: 150px;
+        }
+
+        #box1 {
+            /* flex properties for flex items */
+
+            /* higher the order later it shows up in the container */
+            /* order: 1; */
+
+            /* flex grow is use for more size grow   */
+            /* flex-grow: 6; */
+
+            /* flex shrink for more shrink */
+            /* flex-shrink: 2; */
+
+
+        }
+
+        #box2 {
+            /* flex-grow: 3; */
+
+            /* flex basis it is same like width */
+            /* flex-basis: 500px; */
+            /* flex direction always use in container */
+            /* flex-direction: column; for height */
+            /* flex-direction: row; for width */
+        }
+
+        #box3 {
+                 /* short hand  first flex-grow, second flex-shrink third flex-basis*/
+                 /* flex: 3 5 230px; */
+
+                 /* align-self: flex-start; */
+                 /* align-self: center; */
+                 /* align-self: flex-end; */           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">first box</div>
+        <div class="box" id="box2">second box</div>
+        <div class="box" id="box3">third box</div>
+        <!-- <div class="box" id="box4">fourth box</div>
+        <div class="box" id="box5">fifth box</div>
+        <div class="box" id="box6">sixth box</div> -->
+    </div>
+</body>
+
+</html>

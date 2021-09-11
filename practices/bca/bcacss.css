@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    
+}
+
+.contact-us{
+    display: flex;
+}
+.contact-us{
+    background-color: aqua;
+}
+.follow{
+    display: flex;
+   position: absolute;   
+   top:0px;
+   right: 10px;
+}
+#navbar{
+    display: flex;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+#logo{
+    margin-left: 6px;
+    font-size: 2rem;
+}
+
+
+#navbar ul{
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 5px;
+}
+#navbar ul li{
+    list-style: none;
+    padding: 3px 52px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 22px;
+}
+#navbar ul li:hover{
+    background-color: black;
+    color: white;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    height: 300px;
+}
+
+#main h1{
+    font-size: 3rem;
+}
+
+#main p{
+    font-size: 1rem;
+}
+
+#main::after{
+    content: "";
+    background: url(work.jpg);
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#content{
+   display: flex;
+}
+.box{
+    border: 2px solid black;
+    margin: 2px 19px;
+    text-align: center;
+    padding: 28px 9px;
+}
+.main-heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 3rem;
+}
+.content h1{
+ 
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}

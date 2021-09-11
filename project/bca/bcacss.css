@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    display: inline-block;
+    width: 99%;
+    margin: 2px 4px;
+
+}
+
+#heading {
+    font-size: xx-large;
+    display: inline-block;
+    margin: 1px 30px;
+}
+
+#heading h3 {
+    margin: 10px;
+    color: rgb(12, 59, 104);
+
+}
+
+#heading h3:hover {
+    color: rgb(75, 181, 223);
+
+}
+
+#navbar {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    font-size: x-large;
+
+}
+
+#navbar ul {
+    list-style: none;
+
+
+}
+
+#navbar ul li {
+    float: left;
+    padding: 12px 25px;
+
+}
+
+#navbar ul li a {
+    color: rgb(12, 59, 104);
+    text-decoration: none;
+    padding: 12px 4px;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+    color: rgb(75, 181, 223);
+
+}
+
+.container {
+    background-image: url(work.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 325px;
+    width: 100%;
+}
+
+.content {
+    color: white;
+    display: inline-block;
+    /* border: 2px solid rgb(12, 233, 67); */
+    position: absolute;
+    top: 215px;
+    left: 370px;
+    font-size: x-large;
+}
+
+.content h1 {}
+
+.content p {
+    display: inline-block;
+    position: absolute;
+    left: 206px;
+    margin: 3px 3px;
+}
+
+.row {
+    display: inline-block;
+    /* border: 2px solid brown; */
+    margin: 2px;
+}
+
+.topcourse {
+    display: block;
+    margin: 5px auto;
+    width: 13%;
+    text-decoration: underline;
+    color: rgb(12, 59, 104);
+}
+
+.box {
+    text-align: center;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 3px 7px;
+    padding: 23px;
+    width: 32%;
+}
+
+#box1:hover {
+    color: white;
+    background-color: skyblue;
+
+}
+
+#box1 h2:hover {
+    color: white;
+
+}
+
+
+.box h2 {
+    padding: 10px;
+    color: rgb(12, 59, 104);
+}
+
+.readmore {
+
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    margin: 16px 108px;
+
+}
+
+.box a:hover {
+    background-color: white;
+}
+
+hr {
+    margin: 14px;
+}
+
+.footer {
+    display: inline-block;
+    /* border: 2px solid tomato; */
+    color: rgb(12, 59, 104);
+    position: absolute;
+    left: 550px;
+    margin: 0px 12px;
+    padding: 3px;
+}
+
+.footer1 {}
+
+.footer2 {
+    margin: 7px 30px;
+}
+
+.topnavbar {
+    border: 2px solid teal;
+    background-color: teal;
+    height: 35px;
+}
+
+.contact {
+    padding-top: 5px;
+    color: white;
+    padding-left: 20px;
+}
+
+.contact:hover {
+    cursor: pointer;
+}
+
+.socialmedia {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    padding: 4px;
+}
+
+#fb {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    padding: 3px 4px;
+}
+
+#fb:hover {
+    background-color: white;
+    color: rgb(12, 59, 104);
+}
+
+
+#tw {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    padding: 3px 4px;
+}
+
+#tw:hover {
+    background-color: white;
+    color: rgb(12, 59, 104);
+}
+
+#insta {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    padding: 3px 4px;
+}
+
+#insta:hover {
+    background-color: white;
+    color: rgb(12, 59, 104);
+}
+
+.socialmedia h4{
+    color: white;
+broder: 2px solid black;
+display: inline-block;
+}

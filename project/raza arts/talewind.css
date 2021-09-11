@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* navbar */
+.p-5 {
+    padding: 0.50rem;
+}
+
+.text-xl {
+    font-size: 2rem;
+}
+
+/* header */
+.py-24 {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+/* my gallery */
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.mt-16 {
+    margin-top: 2rem;
+}
+
+/* services */
+/* #services .mb-20 {
+    margin-bottom: 1rem;
+} */
+
+
+/* contact */
+.mb-12 {
+    margin-bottom: 1rem;
+}
+
+/* .py-24 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+} */
+
+/* footer */
+.py-8 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+

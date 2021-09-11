@@ -1,0 +1,156 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+/* navbar : logo section */
+#navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* navbar : logo */
+#logo{
+    margin: 2px 4px;
+
+}
+ /* navbar logo image */
+#logo img{
+    height: 60px;
+    margin: 2px 43px;
+}
+
+/* navbar : menu */
+
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    flex-wrap: wrap;
+    font-variant-east-asian: ;
+    margin: 3px;
+    display: flex;
+    /* border: 2px solid tomato; */
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 2px 23px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color:white;
+    background-color:black;
+    display: block;
+    text-decoration: none;
+    padding: 2px 23px;
+    border-radius: 20px;
+}
+
+/* main intro */
+
+#header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background-size: contain;
+        background-image: url(art5.jpg);
+        background-repeat: no-repeat;
+        height: 357px;
+        width: 100%;
+        background-size: 1418px 357px;    
+        color: rgb(255, 255, 255);
+         justify-content: center;
+         align-items: center;
+         font-size: 1.8rem;
+}
+
+/* galler photos */
+.gallery{
+    margin: 2px;
+    border: 2px solid tomato;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* padding: 2px 2px;
+    margin: 2px 2px; */
+            justify-content: space-between;
+
+}
+
+h3{
+    font-size: 2.3rem;
+    margin: auto;
+}
+
+.box{
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+    border: 2px solid blue;
+    background-image: url(art2.jpg);
+    background-repeat: no-repeat;
+}
+
+.gallery a{
+    margin: auto;
+}
+
+/* .editing-photography  */
+
+.editing-photography{
+    margin: 2px;
+    border: 2px solid tomato;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* padding: 2px 2px;
+    margin: 2px 2px; */
+    justify-content: space-between;
+
+}
+
+.editing-photography a{
+    margin: auto;
+}
+
+/* personal data and contact details  */
+
+.personal{
+    /* margin: 2px; */
+    /* width: 100%; */
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+}
+.personal-content1{
+    position: absolute;
+    right:4px;
+}
+
+/* footer section */
+
+.footer{
+    margin: 2px;
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}

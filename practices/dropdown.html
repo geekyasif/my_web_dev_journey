@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>
+            Dropdown Menu
+        </title>
+    </head>
+    <style>
+        .btn{
+            color: white;
+            background: green;
+        }
+        .btn-content{
+             position: absolute;
+            list-style: none;
+            border: 1px solid grey;
+            background: grey;
+            color: aliceblue;
+            display: none;
+            width: 80px;
+            text-decoration: none;
+        }
+        .dropdown {
+  display: inline-block;
+}
+        
+.dropdown:hover .btn-content {display: block;}
+    </style>
+    
+    <body>
+    <div class="dropdown">
+        <button class="btn">Dropdown</button>
+        <div class="btn-content">
+      <a href="#">link1</a>
+        </div>
+    </div>
+    </body>
+</html>

@@ -35,12 +35,16 @@
 
 
         // post request to send data
-        xhr.open('POST','https://dummy.restapiexample.com/api/v1/create',true);
+        xhr.open('GET','http://dummy.restapiexample.com/api/v1/employees',true);
         xhr.getResponseHeader('content-type','application/json');
+        // xhr.open("GET", "https://coronavirus-smartable.p.rapidapi.com/stats/v1/US/");
+        // xhr.setRequestHeader("x-rapidapi-key", "51ac676a75msh0c2bcc36b8d00f4p10effejsna5365e550c3a");
+        // xhr.setRequestHeader("x-rapidapi-host", "coronavirus-smartable.p.rapidapi.com");
 
         // what to do on progress
         xhr.onprogress = function () {
             console.log("On loading")
+            fetchBtn.innerText = "on loading"
         }
 
         // on readyStateChange this is old method
@@ -55,6 +59,7 @@
             // xhrContent.innerHTML =  `<p>${this.responseText}</p>` 
               if(this.status === 200){
                   console.log(this.responseText);
+                //   fetchBtn.innerText = "FetchBtn"
                 }
                 else{
                     console.error("some error occoured")

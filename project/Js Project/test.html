@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing javacript</title>
+
+    <!-- JavaScript code  -->
+    <script>
+        // sum of two digit function
+        function sum(a, b) {
+            c = a + b;
+            return c;
+        }
+
+
+        // Event call function for paragraph color change 
+        function color() {
+            let x = document.getElementById("para");
+            x.style.backgroundColor = "pink";
+        }
+
+        function color2() {
+            let x = document.getElementById("para");
+            x.style.backgroundColor = "white";
+        }
+
+        // event call function to print anything
+        function hello() {
+            document.write("Hello Mohammad Asif");
+        }
+
+        // function btn1(){
+        //     var x = document.getElementById("para1");
+        //     if(x.style.display === 'none'){
+        //         x.style.display = 'block';
+        //     }
+        //     else{
+        //         x.style.display = 'none';
+        //     }
+
+        // }
+
+        //  alert('are you sure ! you want to visit this website');
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>This is javacript tutorial</h1>
+
+    <!-- paragraph color change  -->
+    <p id="para" onmouseover="color();" onmouseout="color2();">Lorem, ipsum dolor sit amet consectetu</p>
+
+    <!-- print on click -->
+    <button onclick="hello();">Click here</button>
+    <hr>
+
+
+
+    <button onclick="btn1();" onclick="btn2();">Show/Hide</button>
+    <p id="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe est in placeat veniam fuga eligendi
+        aspernatur quos inventore minus veritatis molestiae, ipsa, quas praesentium. Sint voluptatum voluptatibus
+        voluptatem, sequi natus deleniti aspernatur ipsum nam?</p>
+
+
+    <!-- JavaScript code  -->
+    <script>
+        //   sum function call here
+        // z = sum(3, 6);
+        // document.write("sum of 3 and 6 is " + z);
+
+
+
+    </script>
+</body>
+
+</html>

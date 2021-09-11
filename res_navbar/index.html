@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar{
+                background-color: cornflowerblue;
+              
+        }
+        .container{
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+        }
+        .nav-links{
+            height: 100%;
+        }
+
+        .nav-ul{
+          display: flex;
+          margin: 0px;
+          padding: 0px;
+        }
+
+        .nav-li{
+            list-style: none;
+        }
+        .nav-li:hover {
+                background-color: #555;
+            }
+        .nav-li > a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 1rem;
+            display: block;
+        }
+
+        .icon{
+            display: none;
+            position: absolute;
+            right: 1rem;
+            top: 0.5rem;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        @media screen and (max-width: 800px){
+           .container{
+               flex-direction: column;
+               align-items: flex-start;
+           }
+           
+           .brand{
+               flex-direction: row;
+           }
+           
+           .icon{
+               display: block;
+               flex-direction: row;
+           }
+
+           .nav-links{
+               display: none;
+               width: 100%;
+           }
+           .nav-ul{
+              
+               width: 100%;
+               flex-direction: column;
+           }
+           .nav-li{
+               text-align: center;
+           }
+           .nav-links.active{
+               display: flex;
+               
+           }
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="brand">
+                <h1>Geeky Asif</h1>
+            </div>
+            <a class="menu-icon"><i class="fa fa-bars icon"></i></a>
+           
+            <div class="nav-links">
+                <ul class="nav-ul">
+                    <li class="nav-li responsive-li "><a href="">Home</a></li>
+                    <li class="nav-li responsive-li "><a href="">About</a></li>
+                    <li class="nav-li responsive-li "><a href="">Blog</a></li>
+                    <li class="nav-li responsive-li "><a href="">Services</a></li>
+                    <li class="nav-li responsive-li "><a href="">Contact us</a></li>
+                </ul>    
+            </div>
+          
+        </div>
+    </div>
+
+    <script>
+        
+        let icon  = document.getElementsByClassName("menu-icon")[0];
+        let nav_links = document.getElementsByClassName("nav-links")[0];
+    
+        icon.addEventListener("click", () => {
+            nav_links.classList.toggle('active')
+        });
+        
+    </script>
+</body>
+
+</html>
